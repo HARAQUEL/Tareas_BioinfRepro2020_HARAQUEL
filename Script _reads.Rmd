@@ -1,0 +1,37 @@
+---
+title: "Tarea 3.4"
+author: "RAQUEL HERNANDEZ AUSTRIA"
+date: "26/1/2020"
+output: html_document
+---
+
+Hacer un script a partir de los datos guardados en PracUni3/ejemplosgenerales/data/reads.txt:
+Usar rutas relativas desde donde está ubicado el script (en general, en bin) !!
+
+1) Cargar el archivo usando rutas relativas
+
+2) Hacer un barplot de reads por muestra
+
+3) Poner títulos al grafico y a cada eje
+
+4) Colorear cada librería cambiando la paleta de colores, usando su alma de data artistas
+
+
+
+```
+treads <- read.delim(file = "../data/reads.txt")  #1) Cargar el archivo
+```
+
+```
+barplot(treads$nreads, ##2) Hacer un barplot de reads por muestra
+        names.arg = treads$sample, 
+        xlab = "Muestras",       #3) Poner título al grafico y a cada eje
+        ylab = "Número de lecturas", 
+        main = "Resultados",
+        col=c("#6db100", "#ff0c18", "#dc06d3"))  #4)Colorear por librería resultado de librería
+```
+
+
+
+
+        
