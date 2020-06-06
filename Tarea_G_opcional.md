@@ -4,7 +4,7 @@
 
 Stacks is a pipeline designed to work with any restriction-enzyme based data, that is, with data obtained from reduced representation 
 techniques such as genotype-by-sequencing (GBS) or Restriction-site Associated DNA sequencing (RAD-seq). How does stacks work? Stacks
-curate and assemble large numbers of short-read sequences from multiple samples; identifies loci in a set of individuals (either de novo 
+curate and assemble large numbers of short-read sequences from multiple samples; identify loci in a set of individuals (either de novo 
 or aligned to a reference genome), and then genotypes each locus; identify sequence polymorphisms and distinguish them from sequencing 
 errors and; employs a Catalog to record all loci identified in a population and matches individuals to that Catalog to determine which 
 haplotype alleles are present at every locus in each individual. 
@@ -44,10 +44,10 @@ The output of the **process_radtags** if you are processing single-end will be o
 If the data do not have barcodes, then the file will retain its original name. If you are processing paired-end reads, you will get four 
 files per barcode: two for the single-end read and two for the paired-end read.
 
-What information do you need mentioned in methods and results section?
+What information do you need mentioned in the methods and results section?
 
 *Method:* 
-The quantity of bases pairs that you are trimmed.
+The quantity of base pairs that you are trimmed.
 
 *Results:* 
 The number of reads obtained after demultiplexing.
